@@ -1,16 +1,54 @@
+# Import Beautiful-Jekyll Theme
+remote_theme: daattali/beautiful-jekyll@5.0.0
+
 # Name of site
 title: Trevor Nishida
 
 # Author
 author: Trevor Nishida
 
-# Navbar Links
+# --- List of links in the navigation bar --- #
 navbar-links:
   CV: "cv"
- 
+
+# --- Footer social media links --- #
+social-network-links:
+  email: "trevords@hawaii.edu"
+  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  github: trevornishida
+  twitter: trevornishida
+  linkedin: trevornishida
+
+# --- General Options --- #
+# Link to website in footer
+url-pretty: "trevornishida.com"
+
+
+# --- Colours / background image --- #
+
+# Colours for website. Only Valid CSS colors.
+
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
+
+#Images instead of colors.
+
+#navbar-img: "/assets/img/bgimage.png"
+#footer-img: "/assets/img/bgimage.png"
+#page-img: "/assets/img/bgimage.png"
+
 description: A personal site to host my HTML documents.
 baseurl: ""
 twitter_username: trevornishida
 github_username: trevornishida
-remote_theme: daattali/beautiful-jekyll@5.0.0
+
 

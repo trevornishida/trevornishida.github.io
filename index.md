@@ -1,6 +1,6 @@
 ## Trevor Nishida
 
-[My website](trevornishida.com)
+[My website](https://www.trevornishida.com)
 
 You can use the [editor on GitHub](https://github.com/trevornishida/trevornishida.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 

@@ -1,10 +1,7 @@
 ---
 title: ALOHA!
+subtitle: I am an undergraduate student studying Marine Science at the University of Hawaii at Hilo with an interest in coral reef microbiomes, data science and machine learning. 
 ---
----
-### I am an undergraduate student at the **University of Hawaii at Hilo** with an interest in *coral reef microbiomes*, *data science* and *machine learning*.
-
-
 
 You can use the [editor on GitHub](https://github.com/trevornishida/trevornishida.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 

@@ -1,6 +1,6 @@
-## Trevor Nishida
+## Aloha!
 
-[My website](https://www.trevornishida.com)
+I am an undergraduate student at the **University of Hawaii at Hilo** with an interest in *coral reef microbiomes*, *data science* and *machine learning*. 
 
 You can use the [editor on GitHub](https://github.com/trevornishida/trevornishida.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 

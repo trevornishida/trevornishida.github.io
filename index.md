@@ -1,6 +1,6 @@
 ---
 title: ALOHA!
-subtitle: I am an undergraduate student studying Marine Science at the University of Hawaii at Hilo with an interest in coral reef microbiomes, data science and machine learning. 
+subtitle: I am an undergraduate student studying Marine Science at the University of Hawaii at Hilo with interests in coral reef morphological plasticity, data science and machine learning. 
 cover-img: "/assets/images/coral2.jpg"
 ---
 

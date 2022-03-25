@@ -1,4 +1,4 @@
-# Aloha!
+
 ---
 I am an undergraduate student at the **University of Hawaii at Hilo** with an interest in *coral reef microbiomes*, *data science* and *machine learning*. 
 

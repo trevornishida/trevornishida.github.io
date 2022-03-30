@@ -9,7 +9,7 @@ cover-img: "/assets/images/coral2.jpg"
   <p align="right"> I was born and raised on the island of Oʻahu in the state of Hawaiʻi. I am currently studying at the University of Hawaiʻi at Hilo, with a major in <b>Marine Science</b>, a minor in <b>Chemistry</b> and certificates in the <i>Marine Option Program</i> and <i>Data Science</i>.
   <br>
   <br>
-In the future I would like to research 
+In the future I would like to research <br>
     the morphological plasticity of <br>
     coral reefs and how this morphological <br>
     plasticity can affect coral reef communities <br>

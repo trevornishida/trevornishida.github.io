@@ -12,7 +12,7 @@ cover-img: "/assets/images/coral2.jpg"
 In the future I would like to research <br>
     the morphological plasticity of <br>
     coral reefs and how this morphological <br>
-    plasticity can affect coral reef communities <br>
+    plasticity can affect coral reef ecosystems <br>
     and the coral microbiome. 
   <br>
   <br>

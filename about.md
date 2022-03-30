@@ -4,11 +4,12 @@ cover-img: "/assets/images/coral2.jpg"
 ---
 
 <img src="/assets/images/portrait.jpg" align="left" width="400px"/>
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 I was born and raised on the island of Oʻahu in the state of Hawaiʻi. I am currently studying at the University of Hawaiʻi at Hilo, with a major in **Marine Science**, a minor in **Chemistry** and certificates in the *Marine Option Program* and *Data Science*.
 

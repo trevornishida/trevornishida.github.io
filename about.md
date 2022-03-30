@@ -1,5 +1,5 @@
 ---
-title: About Me: 
+title: About Me
 cover-img: "/assets/images/coral2.jpg"
 ---
 

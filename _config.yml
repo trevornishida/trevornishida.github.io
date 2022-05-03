@@ -11,6 +11,7 @@ author: Trevor Nishida
 navbar-links:
   CV: "cv"
   ABOUT ME: "about"
+  PROJECTS: "projects"
   
 # --- Change avatar image --- #
 avatar: "/assets/images/test.jpg"

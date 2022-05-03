@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Projects
 cover-img: "/assets/images/coral2.jpg"
 ---

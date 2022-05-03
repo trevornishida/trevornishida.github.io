@@ -1,5 +1,6 @@
 ---
 title: Projects
+subtitle: Here you can find a blog-style list of either projects I have worked on, either for school or individually. 
 cover-img: "/assets/images/coral2.jpg"
 ---
 

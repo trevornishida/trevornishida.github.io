@@ -6,4 +6,4 @@ image_sliders:
   - slidy
 ---
 
-  {% include slider.html selector="slider1" %}
+  {% include slider.html selector="slidy" %}

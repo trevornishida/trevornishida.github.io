@@ -9,5 +9,5 @@
       title: Low-tide morning view at the Hawaii Institute of Marine Biology.
       alt: Kaneohe Bay, Kaneohe, HI. 
   settings:
-    height: 600
+    height: "'auto'"
     effect: "'fade'"

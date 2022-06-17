@@ -5,7 +5,7 @@
     - src: /assets/images/coral1.JPG
       title: Coral colonies and a couple reef fish. 
       alt: Richardson Ocean Park, Hilo, HI.
-    - src: /assets/images/kbay.jpeg
+    - data-src: /assets/images/kbay.jpeg
       title: Low-tide morning view at the Hawaii Institute of Marine Biology.
       alt: Kaneohe Bay, Kaneohe, HI. 
   settings:

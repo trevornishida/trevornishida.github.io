@@ -12,5 +12,6 @@
       title: Some lobe coral colonies.
       alt: Richardson Ocean Park, Hilo, HI.
   settings:
-    height: 600
+    height: "'auto'"
     effect: "'fade'"
+    interval: 5

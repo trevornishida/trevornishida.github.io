@@ -8,6 +8,9 @@
     - data-src: /assets/images/kbay.jpeg
       title: Low-tide morning view at the Hawaii Institute of Marine Biology.
       alt: Kaneohe Bay, Kaneohe, HI. 
+    - src: /assets/images/coral2.jpg
+      title: Some lobe coral colonies.
+      alt: Richardson Ocean Park, Hilo, HI.
   settings:
     height: 600
     effect: "'fade'"

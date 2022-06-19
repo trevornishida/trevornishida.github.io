@@ -14,7 +14,7 @@ navbar-links:
   PROJECTS: "projects"
   
 # --- Change avatar image --- #
-avatar: "/assets/images/test.jpg"
+#avatar: "/assets/images/test.jpg"
 
 # --- Footer social media links --- #
 social-network-links:

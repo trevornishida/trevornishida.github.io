@@ -12,6 +12,7 @@ navbar-links:
   CV: "cv"
   ABOUT ME: "about"
   PROJECTS: "projects"
+  GALLERY: "gallery"
   
 # --- Change avatar image --- #
 #avatar: "/assets/images/test.jpg"

@@ -6,7 +6,7 @@ cover-img: "/assets/images/coral2.jpg"
 <img src="/assets/images/portrait.jpg" align="left" width="400px"/>
 
 <div>
-  <p align="right"> I was born and raised on the island of Oʻahu in the state of Hawaiʻi. I am currently studying at the University of Hawaiʻi at Hilo, with a major in <b>Marine Science</b>, a minor in <b>Chemistry</b> and certificates in the <i>Marine Option Program</i> and <i>Data Science</i>.
+  <p align="right"> I was born and raised on the island of Oʻahu in the state of Hawaiʻi. I graduated from the University of Hawaiʻi at Hilo in Spring of 2023, with a major in <b>Marine Science</b>, a minor in <b>Chemistry</b>, and a certificate in <i>Data Science</i>.
   <br>
   <br>
 In the future I would like to research <br>

@@ -1,7 +1,6 @@
 ---
 title: NOAA Intern Symposium References
-subtitle: This Page Contains References (in MEPS format) for my 2023 NOAA PIC Intern Symposium Presentation: "Aquatic Analysis Adventure: Exploring Biodiversity Patterns of a
-Hawaiian Reef Ecosystem using eDNA"
+subtitle: This Page Contains References (in MEPS format) for my 2023 NOAA PIC Intern Symposium Presentation: "Aquatic Analysis Adventure: Exploring Biodiversity Patterns of a Hawaiian Reef Ecosystem using eDNA"
 cover-img: "/assets/images/coral2.jpg"
 ---
 

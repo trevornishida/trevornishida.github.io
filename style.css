@@ -94,8 +94,8 @@ nav {
     display: inline-block;
     width: 64px;
     height: 20px;
-    margin-left: 50px;
-    margin-top: 5px;
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
 .switch input {
@@ -331,6 +331,27 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-buttons button {
+    margin: 0 10px; /* Adjust margin between buttons as needed */
+    padding: 10px 20px;
+    background-color: #007bff; /* Twitter color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-buttons button:hover {
+    background-color: #0056b3; /* Darker shade of Twitter color */
 }
 
 /* Dark Mode */

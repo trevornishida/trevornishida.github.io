@@ -1,0 +1,351 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    padding: 60px 20px;
+    margin: 40px 0;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+/* Navbar Styles *//* Dropdown Menu */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 30px;
+    position: relative; /* Ensure relative positioning for child positioning */
+}
+
+.burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.dropbtn:hover .burger-line {
+    background-color: #666;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 2%; /* Ensure it aligns to the right edge of the button */
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    min-width: 160px; /* Ensure a minimum width */
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.switch {
+    position: relative;
+    align-content: center;
+    display: inline-block;
+    width: 64px;
+    height: 20px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 64px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+    transform: translateX(44px);
+}
+
+.sun, .moon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    transition: color 0.4s;
+}
+
+.sun {
+    left: 5px;
+}
+
+.moon {
+    right: 5px;
+}
+
+.dark-mode .sun {
+    color: black;
+}
+
+.dark-mode .moon {
+    color: white;
+}
+
+/* Header Section */
+header {
+    background: url('assets/images/coral2.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: 0; /* Ensure header is at the top */
+    width: 100%;
+}
+
+.header-content h1 {
+    font-size: 5rem;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    line-height: 1.1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10;
+}
+
+.header-content p {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 10px 0 0;
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 1.1;
+    text-align: center;
+
+}
+
+.arrow-container {
+    position: relative;
+    width: 100px; /* adjust container width */
+    height: 100px; /* adjust container height */
+    scroll-behavior: smooth;
+    scroll-margin-top: 50px;
+}
+
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid white; /* Adjusted border */
+    position: absolute;
+    bottom: 20;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: blink 1s infinite;
+    cursor: pointer;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.accent-line {
+    width: 50px;
+    height: 4px;
+    background-color: #66bb6a;
+    margin: 10px auto;
+}
+
+/* Projects Section */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: transparent;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card.is-flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-front {
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-back {
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+}
+
+.read-more-btn {
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Contact Section */
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .container {
+    background-color: #444;
+}
+
+.dark-mode .card-front {
+    background-color: #555;
+}
+
+.dark-mode .card-back {
+    background-color: #777;
+}
+
+.dark-mode .read-more-btn {
+    background-color: #444;
+}

@@ -90,7 +90,6 @@ nav {
 
 .switch {
     position: relative;
-    align-content: center;
     display: inline-block;
     width: 64px;
     height: 20px;
@@ -137,19 +136,10 @@ input:checked + .slider:before {
 }
 
 .sun, .moon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    display: inline-block;
     font-size: 14px;
+    margin: 0 10px;
     transition: color 0.4s;
-}
-
-.sun {
-    left: 5px;
-}
-
-.moon {
-    right: 5px;
 }
 
 .dark-mode .sun {
@@ -324,6 +314,43 @@ header {
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* Stylization for Individual Project CArds */
+
+#hmf_project
+{
+    background-image: url('assets/images/c_lunulatus.JPG');
+    background-repeat: no-repeat;
+    background-position: 28% 35%;
+    background-size: cover;
+    position: auto;
+    color: white;
+    font-weight: bolder;
+}
+
+#seniorthesis
+{
+    background-image: url('assets/images/z_flavescens.jpg');
+    background-repeat: no-repeat;
+    background-position: 83% 10%;
+    background-size: cover;
+    position: auto;
+    color: white;
+    font-weight: bolder;
+}
+
+
+#datadash
+{
+    background-image: url('assets/images/coral3.JPG');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    position: auto;
+    color: white;
+    font-weight: bolder;
+}
+
 
 /* Contact Section */
 .contact-content {

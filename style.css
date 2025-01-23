@@ -351,6 +351,17 @@ header {
     font-weight: bolder;
 }
 
+#dar-dashboard
+{
+    background-image: url('assets/images/coral1.JPG');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    position: auto;
+    color: white;
+    font-weight: bolder;
+}
+
 
 /* Contact Section */
 .contact-content {

@@ -12,7 +12,7 @@ The goal for my project was to create a machine learning model that could succes
 Working with footage from the [MEGA Lab Camera Livestream](https://www.youtube.com/@MEGALabCam), I was able to sucessfully create a model which could detect grazing behaviors in these reef surgeonfish.
 Most of the code was written in Python with additional data analysis taking place in R. Image data was annotated using the online [Roboflow](roboflow.com) machine learning toolbox.
 The project took place over my senior year of study in the marine science department at UH Hilo.
-The corresponding write-up can be found [here](google.com) and here is an example video analyzed by the model:
+The corresponding write-up can be found [here](https://www.trevornishida.com/assets/docs/NishidaFinalManuscript.pdf) and here is an example video analyzed by the model:
 
 {% include youtubePlayer.html id=page.youtubeId %}
 

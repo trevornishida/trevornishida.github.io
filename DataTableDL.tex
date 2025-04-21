@@ -1,0 +1,872 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[left=1mm, right=1mm, top=5mm, bottom=5mm]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\pagestyle{empty}
+\usepackage{fontspec}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{colortbl}
+\usepackage{hhline}
+\newlength\Oldarrayrulewidth
+\newlength\Oldtabcolsep
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{wrapfig}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable}[c]{|p{0.47in}|p{0.76in}|p{0.66in}|p{0.56in}|p{0.49in}|p{0.66in}|p{0.66in}|p{0.68in}|p{0.49in}|p{0.66in}|p{0.66in}}
+
+
+
+\ascline{2.5pt}{000000}{1-11}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{} & \multicolumn{4}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 2.37in+6\tabcolsep+2.25pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Fishing\ Report}}}} & \multicolumn{5}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3.15in+8\tabcolsep+3pt}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Dealer\ Report}}}} \\
+
+\ascline{0.75pt}{666666}{3-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.47in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Month}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 0.76in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.76in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Deep7}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ trips}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ dealers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.\ sold}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Value}}}} \\
+
+\ascline{2.5pt}{000000}{1-11}\endfirsthead 
+
+\ascline{2.5pt}{000000}{1-11}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{} & \multicolumn{4}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 2.37in+6\tabcolsep+2.25pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Fishing\ Report}}}} & \multicolumn{5}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3.15in+8\tabcolsep+3pt}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Dealer\ Report}}}} \\
+
+\ascline{0.75pt}{666666}{3-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.47in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Month}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 0.76in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.76in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Deep7}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ trips}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ dealers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.\ sold}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Value}}}} \\
+
+\ascline{2.5pt}{000000}{1-11}\endhead
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{OPAKAPAKA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{56}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{92}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,370}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,588.30}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{54}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{21}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,291}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,279.15}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$41,357}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{ONAGA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{31}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{51}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{880}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,315.75}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{27}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{763}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{3,853.60}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$45,156}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{EHU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{38}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{53}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{926}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,725.32}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{32}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{16}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{740}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,392.92}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$12,839}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{LEHI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{16}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{19}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{45}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{364.53}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{13}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{34}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{289.93}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$2,313}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{HAPUUPUU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{19}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{248.50}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{17}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{180.75}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,338}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{KALEKALE}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{23}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{35}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{290}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{523.30}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{21}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{260}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{456.30}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$3,130}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{GINDAI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{23}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{29}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{159}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{317.54}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{13}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{105}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{207.29}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,573}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\multirow[c]{-8}{*}{\parbox{0.47in}{\centering \rotatebox[origin=c]{90}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{September}}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{\textbf{SUM}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{80}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{133}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{3,689}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{12,083.24}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{70}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{28}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{3,210}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{10,659.94}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{\$107,707}}}} \\
+
+\ascline{0.75pt}{666666}{1-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{OPAKAPAKA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{48}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{78}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,185}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{3,779.05}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{40}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{20}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,139}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{3,548.75}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$38,069.79}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{ONAGA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{24}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{40}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{502}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,496.30}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{21}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{568}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,633.10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$33,070.94}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{EHU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{39}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{60}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{654}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,281.10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{29}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{17}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{508}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{985.80}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$9,526.55}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{LEHI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{11}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{14}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{102.50}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{15}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{103.28}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$755.12}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{HAPUUPUU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{144.60}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{31}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{146.90}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,209.90}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{KALEKALE}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{28}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{35}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{285}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{525.00}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{22}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{207}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{374.95}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$2,457.55}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{GINDAI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{22}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{29}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{140}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{252.20}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{15}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{11}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{91}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{166.95}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,210.60}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\multirow[c]{-8}{*}{\parbox{0.47in}{\centering \rotatebox[origin=c]{90}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{October}}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{\textbf{SUM}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{69}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{120}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{2,790}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{8,580.75}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{57}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{26}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{2,559}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{7,959.73}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{\$86,300.45}}}} \\
+
+\ascline{0.75pt}{666666}{1-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{OPAKAPAKA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{81}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{104}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,425}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5,389.67}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{58}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{22}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,221}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,606.01}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$44,838}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{ONAGA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{52}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{65}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{827}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,374.60}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{42}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{751}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,079.76}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$46,154}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{EHU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{67}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{80}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,073}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,103.78}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{36}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{20}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{667}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,257.80}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$11,294}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{LEHI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{15}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{19}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{36}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{226.40}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{14}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{32}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{211.60}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,472}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{HAPUUPUU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{11}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{11}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{222.70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{193.70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,432}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{KALEKALE}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{39}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{43}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{219}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{387.40}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{25}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{179}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{312.30}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,860}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{GINDAI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{39}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{40}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{202}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{392.60}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{19}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{137}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{255.10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,849}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\multirow[c]{-8}{*}{\parbox{0.47in}{\centering \rotatebox[origin=c]{90}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{November}}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{\textbf{SUM}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{119}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{155}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{3,794}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{13,097.15}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{82}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{28}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{2,996}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{10,916.27}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{\$108,899}}}} \\
+
+\ascline{0.75pt}{666666}{1-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{OPAKAPAKA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{137}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{244}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,135}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{15,418.99}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{125}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{32}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{3,739}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{13,580.58}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$129,220}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{ONAGA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{115}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{216}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{3,110}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{17,368.35}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{96}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{23}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,617}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{14,639.80}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$167,756}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{EHU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{113}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{190}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{3,218}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6,502.47}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{88}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{25}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,737}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5,201.74}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$46,628}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{LEHI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{42}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{66}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{154}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,197.50}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{37}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{152}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,240.00}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$9,031}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{HAPUUPUU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{25}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{28}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{36}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{677.90}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{24}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{36}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{693.35}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$5,466}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{KALEKALE}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{95}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{144}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,189}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,400.75}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{74}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{19}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,077}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,887.70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$9,642}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{GINDAI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{69}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{89}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{489}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{948.40}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{41}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{15}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{345}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{628.10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$4,705}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\multirow[c]{-8}{*}{\parbox{0.47in}{\centering \rotatebox[origin=c]{90}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{December}}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{\textbf{SUM}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{190}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{368}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{12,331}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{44,514.36}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{158}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{40}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{10,703}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{37,871.27}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{\$372,448}}}} \\
+
+\ascline{0.75pt}{666666}{1-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{OPAKAPAKA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{80}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{130}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,664}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10,265.93}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{69}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{25}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,360}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9,240.27}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$91,938}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{ONAGA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{60}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{95}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,675}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8,563.55}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{52}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{20}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,571}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8,067.33}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$93,013}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{EHU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{59}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{85}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,118}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,107.75}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{45}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{19}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,064}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,971.25}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$16,617}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{LEHI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{22}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{32}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{103}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{736.40}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{21}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{101}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{758.25}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$5,164}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{HAPUUPUU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{18}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{240.20}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{38}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{196.70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,669}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{KALEKALE}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{49}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{705}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,287.50}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{41}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{14}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{637}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,174.66}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$7,732}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{GINDAI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{34}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{41}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{169}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{316.30}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{26}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{140}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{250.65}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,820}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\multirow[c]{-8}{*}{\parbox{0.47in}{\centering \rotatebox[origin=c]{90}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{January}}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{\textbf{SUM}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{111}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{190}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{6,452}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{23,517.63}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{97}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{29}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{5,911}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{21,659.11}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{\$217,953}}}} \\
+
+\ascline{0.75pt}{666666}{1-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{OPAKAPAKA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{73}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{126}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,294}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8,340.48}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{58}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{25}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,076}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7,523.29}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$80,461}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{ONAGA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{53}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{90}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,529}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7,331.15}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{38}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{18}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,332}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6,507.55}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$78,211}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{EHU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{60}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{95}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,063}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,999.40}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{40}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{23}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,567}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,641.75}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$14,912}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{LEHI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{19}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{27}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{68}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{617.90}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{17}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{44}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{398.20}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$3,056}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{HAPUUPUU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{11}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{155.10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{128.55}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,148}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{KALEKALE}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{54}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{466}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{847.90}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{33}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{17}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{323}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{586.55}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$3,883}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{GINDAI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{28}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{36}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{190}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{370.30}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{21}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{14}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{136}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{260.30}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$2,312}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\multirow[c]{-8}{*}{\parbox{0.47in}{\centering \rotatebox[origin=c]{90}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{February}}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{\textbf{SUM}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{102}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{185}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{5,621}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{19,662.23}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{79}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{35}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{5,488}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{17,046.19}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{\$183,982}}}} \\
+
+\ascline{0.75pt}{666666}{1-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{OPAKAPAKA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{226}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{774}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{13,073}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{47,782.42}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{194}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{50}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{11,826}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{42,778.05}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$425,884}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{ONAGA}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{164}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{557}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8,523}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{44,449.70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{140}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{33}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7,602}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{39,781.14}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$463,361}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{EHU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{198}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{563}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8,052}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{15,719.82}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{149}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{41}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7,283}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12,451.26}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$111,816}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{LEHI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{73}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{174}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{420}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{3,245.23}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{16}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{378}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{3,001.26}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$21,790}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{HAPUUPUU}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{55}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{78}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{106}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,689.00}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{48}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{19}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{141}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,539.95}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$12,263}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{KALEKALE}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{162}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{397}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{3,154}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5,971.85}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{126}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{24}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,683}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,792.46}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$28,704}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{GINDAI}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{126}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{264}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,349}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,597.34}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{81}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{25}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{954}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,768.39}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$13,470}}} \\
+
+\ascline{0.75pt}{666666}{2-11}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.47in+0\tabcolsep}}{\multirow[c]{-8}{*}{\parbox{0.47in}{\centering \rotatebox[origin=c]{90}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{TOTAL}}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{8}{0}\selectfont{\textbf{SUM}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{291}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{1,151}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{34,677}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{121,455.36}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{243}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.68in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{65}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{30,867}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{106,112.51}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\textbf{\$1,077,288}}}} \\
+
+\ascline{2.5pt}{000000}{1-11}
+
+
+
+\end{longtable}
+
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
+
+\center
+
+\textbf{Total Deep 7 Landings (lbs.) Reported by fishers from September
+2024 to Present:}
+
+121,455 lbs. equivalent to \textbf{24.69\%} of the ACL
+
+\newpage
+
+\section{Uhu Data Table}\label{uhu-data-table}
+
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable}[c]{|p{0.74in}|p{0.75in}|p{0.63in}|p{0.54in}|p{0.62in}|p{0.75in}|p{0.78in}|p{0.54in}|p{0.64in}|p{0.75in}}
+
+
+
+\ascline{2.5pt}{000000}{1-10}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{} & \multicolumn{4}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 2.55in+6\tabcolsep+2.25pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Fishing\ Report}}}} & \multicolumn{5}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3.47in+8\tabcolsep+3pt}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Dealer\ Report}}}} \\
+
+\ascline{0.75pt}{666666}{2-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.74in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.74in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Month}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ trips}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.62in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.78in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ dealers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.\ sold}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Value}}}} \\
+
+\ascline{2.5pt}{000000}{1-10}\endfirsthead 
+
+\ascline{2.5pt}{000000}{1-10}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{} & \multicolumn{4}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 2.55in+6\tabcolsep+2.25pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Fishing\ Report}}}} & \multicolumn{5}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3.47in+8\tabcolsep+3pt}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Dealer\ Report}}}} \\
+
+\ascline{0.75pt}{666666}{2-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.74in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.74in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Month}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ trips}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.62in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.78in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ dealers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.\ sold}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Value}}}} \\
+
+\ascline{2.5pt}{000000}{1-10}\endhead
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{June}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{292}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.62in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,520.45}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.78in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{299}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,685.75}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$9,835.64}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{July}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{386}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.62in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,825.10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.78in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{280}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,461.70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$3,579.20}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{August}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{12}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{600}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.62in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,796.50}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.78in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{593}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,878.70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$4,580.35}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{September}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{11}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{11}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,061}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.62in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,668.40}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.78in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,019}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,400.00}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$10,016.06}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{October}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{233}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.62in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,086.90}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.78in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{3}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{200}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,010.80}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,960.08}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{November}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{448}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.62in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,280.60}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.78in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{581}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,001.25}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$6,529.63}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{December}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{11}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{11}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{941}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.62in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,402.00}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.78in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{903}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,347.70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$5,799.65}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{January}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{538}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.62in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,605.50}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.78in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{650}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{3,005.00}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$11,709.35}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{February}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{541}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.62in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,678.20}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{5}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.78in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.54in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{508}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,553.20}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$11,279.37}}} \\
+
+\ascline{2.5pt}{000000}{1-10}
+
+
+
+\end{longtable}
+
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
+
+\center
+
+\textbf{Total Uhu Commercial Sales (lbs.) Reported by dealers from June
+2024 to Present:}
+
+23,344 lbs. equivalent to \textbf{77.81\%} of the ACL
+
+\newpage
+
+\section{Kala Data Table}\label{kala-data-table}
+
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable}[c]{|p{0.74in}|p{0.76in}|p{0.64in}|p{0.55in}|p{0.63in}|p{0.76in}|p{0.79in}|p{0.55in}|p{0.65in}|p{0.69in}}
+
+
+
+\ascline{2.5pt}{000000}{1-10}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{} & \multicolumn{4}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 2.57in+6\tabcolsep+2.25pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Fishing\ Report}}}} & \multicolumn{5}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3.43in+8\tabcolsep+3pt}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Dealer\ Report}}}} \\
+
+\ascline{0.75pt}{666666}{2-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.74in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.74in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Month}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ trips}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ dealers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.65in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.\ sold}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.69in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Value}}}} \\
+
+\ascline{2.5pt}{000000}{1-10}\endfirsthead 
+
+\ascline{2.5pt}{000000}{1-10}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{} & \multicolumn{4}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 2.57in+6\tabcolsep+2.25pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Fishing\ Report}}}} & \multicolumn{5}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3.43in+8\tabcolsep+3pt}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Dealer\ Report}}}} \\
+
+\ascline{0.75pt}{666666}{2-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.74in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.74in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Month}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ trips}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ dealers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.65in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.\ sold}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.69in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Value}}}} \\
+
+\ascline{2.5pt}{000000}{1-10}\endhead
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{August}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{440}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,613.15}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{396}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.65in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,447.0}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.69in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$4,724.69}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{September}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{477}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,167.50}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{452}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.65in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,134.4}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.69in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$2,325.21}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{October}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{375}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,364.15}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{444}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.65in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,281.7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.69in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,005.21}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{November}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{474}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,817.20}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{632}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.65in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,354.0}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.69in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,970.52}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{December}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{11}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{11}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{468}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,826.60}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{8}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{512}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.65in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,985.6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.69in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$3,113.40}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{January}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{167}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{601.50}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{155}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.65in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{551.7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.69in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$1,853.48}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.74in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{February}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{10}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{558}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.63in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,447.50}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.76in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{7}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.55in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{496}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.65in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{1,340.2}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.69in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$3,877.27}}} \\
+
+\ascline{2.5pt}{000000}{1-10}
+
+
+
+\end{longtable}
+
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
+
+\center
+
+\textbf{Total Kala Commercial Sales (lbs.) Reported by dealers from
+August 2024 to Present:}
+
+11,094 lbs. equivalent to \textbf{73.96\%} of the ACL
+
+\newpage
+
+\section{Uku Data Table}\label{uku-data-table}
+
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable}[c]{|p{0.65in}|p{0.77in}|p{0.64in}|p{0.56in}|p{0.57in}|p{0.77in}|p{0.80in}|p{0.56in}|p{0.66in}|p{0.77in}}
+
+
+
+\ascline{2.5pt}{000000}{1-10}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.65in+0\tabcolsep}}{} & \multicolumn{4}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 2.55in+6\tabcolsep+2.25pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Fishing\ Report}}}} & \multicolumn{5}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3.55in+8\tabcolsep+3pt}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Dealer\ Report}}}} \\
+
+\ascline{0.75pt}{666666}{2-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.65in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.65in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Month}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.77in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ trips}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.57in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.77in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.8in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ dealers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.\ sold}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.77in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Value}}}} \\
+
+\ascline{2.5pt}{000000}{1-10}\endfirsthead 
+
+\ascline{2.5pt}{000000}{1-10}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.65in+0\tabcolsep}}{} & \multicolumn{4}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 2.55in+6\tabcolsep+2.25pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Fishing\ Report}}}} & \multicolumn{5}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3.55in+8\tabcolsep+3pt}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Dealer\ Report}}}} \\
+
+\ascline{0.75pt}{666666}{2-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.65in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.65in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Month}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.77in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ trips}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.57in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.77in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.8in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ dealers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.\ sold}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.77in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Value}}}} \\
+
+\ascline{2.5pt}{000000}{1-10}\endhead
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.65in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{January}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.77in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{48}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{538}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.57in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,117.5}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.77in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{42}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.8in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{14}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{526}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4,143.85}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.77in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$30,623.85}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.65in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{February}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.77in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{48}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.64in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{70}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{368}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.57in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,995.3}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.77in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{36}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.8in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.56in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{289}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedleft}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{2,038.25}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.77in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$15,748.60}}} \\
+
+\ascline{2.5pt}{000000}{1-10}
+
+
+
+\end{longtable}
+
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
+
+\center
+
+\textbf{Total Uku Commercial Sales (lbs.) Reported by dealers from
+January 2025 to Present:}
+
+6,712 lbs. Uku ACL is not tracked in season.
+
+\center
+
+\newpage
+
+\section{Kona Crab Data Table}\label{kona-crab-data-table}
+
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable}[c]{|p{0.67in}|p{0.79in}|p{0.66in}|p{0.57in}|p{0.49in}|p{0.79in}|p{0.82in}|p{0.57in}|p{0.67in}|p{0.72in}}
+
+
+
+\ascline{2.5pt}{000000}{1-10}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.67in+0\tabcolsep}}{} & \multicolumn{4}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 2.51in+6\tabcolsep+2.25pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Fishing\ Report}}}} & \multicolumn{5}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3.57in+8\tabcolsep+3pt}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Dealer\ Report}}}} \\
+
+\ascline{0.75pt}{666666}{2-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.67in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.67in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Month}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ trips}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.57in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.82in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ dealers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.57in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.67in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.\ sold}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.72in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Value}}}} \\
+
+\ascline{2.5pt}{000000}{1-10}\endfirsthead 
+
+\ascline{2.5pt}{000000}{1-10}
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.67in+0\tabcolsep}}{} & \multicolumn{4}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 2.51in+6\tabcolsep+2.25pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Fishing\ Report}}}} & \multicolumn{5}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\centering}m{\dimexpr 3.57in+8\tabcolsep+3pt}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Dealer\ Report}}}} \\
+
+\ascline{0.75pt}{666666}{2-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\centering}m{\dimexpr 0.67in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.67in}{\centering \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Month}}}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ trips}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.57in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ fishers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.82in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{no.\ dealers}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.57in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Pieces}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.67in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{lbs.\ sold}}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.72in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\textbf{Value}}}} \\
+
+\ascline{2.5pt}{000000}{1-10}\endhead
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.67in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{January}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{9}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.57in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{466}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{524.6}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{3}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.82in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{4}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.57in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{211}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.67in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{281.4}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.72in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{\$3,085.20}}} \\
+
+\ascline{0.75pt}{666666}{1-10}
+
+
+
+\multicolumn{1}{!{\color[HTML]{000000}\vrule width 2.5pt}>{\raggedright}m{\dimexpr 0.67in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{February}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{*}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.66in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{*}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.57in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{*}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.49in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{*}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.79in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{*}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.82in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{*}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.57in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{*}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.67in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{*}}} & \multicolumn{1}{!{\color[HTML]{666666}\vrule width 0.75pt}>{\raggedright}m{\dimexpr 0.72in+0\tabcolsep}!{\color[HTML]{000000}\vrule width 2.5pt}}{\textcolor[HTML]{000000}{\fontsize{9}{0}\selectfont{*}}} \\
+
+\ascline{2.5pt}{000000}{1-10}
+
+
+
+\end{longtable}
+
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
+
+\center
+
+\textbf{Total Kona Crab Commercial Sales (lbs.) Reported by dealers from
+January 2025 to Present:}
+
+281 lbs. equivalent to \textbf{1.1\%} of the ACT
+
+Data processed as of 2025-04-21. Unavailable and confidential data are
+not included in this summary.
+
+Changes in this summary reflect new trips and adjustments to previous
+trips.
+
+\center
+
+\end{document}
